@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <title>Tic Tac Toe Tomek With Blocks</title>
+
+        <link rel="stylesheet" href="css/game.css">
+        <link rel="stylesheet" href="css/square.css">
+
+    </head>
+
+    <body>
+
+        <div id="game" class="game">
+
+            <div id="board"></div>
+
+            <div id="info" class="game-info">
+
+                <div id="players"></div>
+                <div id="curStat"></div>
+                <button id="clearHist">Clear History</button>
+                <button id="toggleMoveSortOrd">Reverse Move Order</button>
+
+                <div id="moves"></div>
+
+            </div>
+
+        </div>
+
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+
+        <!-- These are the model functions -->
+        <script type="text/javascript" src="js/fn/model/fmIsDraw.js"></script>
+        <script type="text/javascript" src="js/fn/model/fmIsSpecialSq.js"></script>
+        <script type="text/javascript" src="js/fn/model/fmPlayer.js"></script>
+        <script type="text/javascript" src="js/fn/model/fmRenderCmds.js"></script>
+        <script type="text/javascript" src="js/fn/model/fmSqs.js"></script>
+        <script type="text/javascript" src="js/fn/model/fmWinner.js"></script>
+        <script type="text/javascript" src="js/fn/model/fmWinningLs.js"></script>
+        <!-- -->
+        <!-- These are the view functions -->
+        <script type="text/javascript" src="js/fn/view/fvRenderBoard.js"></script>
+        <script type="text/javascript" src="js/fn/view/fvRenderDoms.js"></script>
+        <script type="text/javascript" src="js/fn/view/fvRenderInfo.js"></script>
+        <script type="text/javascript" src="js/fn/view/fvRenderMoves.js"></script>
+        <script type="text/javascript" src="js/fn/view/fvRenderSq.js"></script>
+        <script type="text/javascript" src="js/fn/view/fvRenderSqs.js"></script>
+        <script type="text/javascript" src="js/fn/view/params/fvRenderInfoParams.js"></script>
+        <script type="text/javascript" src="js/fn/view/params/fvRenderMovesParams.js"></script>
+        <script type="text/javascript" src="js/fn/view/params/fvRenderSqParams.js"></script>
+        <!-- -->
+        <!-- These are the objects -->
+        <script type="text/javascript" src="js/obj/ocGame.js"></script>
+        <script type="text/javascript" src="js/obj/omStates.js"></script>
+        <!-- -->
+        <script type="text/javascript" src="js/cfgs.js"></script>
+        <script type="text/javascript" src="js/compositionRoot.js"></script>
+        <script type="text/javascript" src="js/editCfgs.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <!-- These are the unit test counterparts -->
+        <script type="text/javascript" src="js/unitTest/fn/model/unitTestFMIsDraw.js"></script>
+        <script type="text/javascript" src="js/unitTest/fn/model/unitTestFMIsSpecialSq.js"></script>
+        <script type="text/javascript" src="js/unitTest/fn/model/unitTestFMPlayer.js"></script>
+        <script type="text/javascript" src="js/unitTest/fn/model/unitTestFMRenderCmds.js"></script>
+        <script type="text/javascript" src="js/unitTest/fn/model/unitTestFMSqs.js"></script>
+        <script type="text/javascript" src="js/unitTest/fn/model/unitTestFMWinner.js"></script>
+        <script type="text/javascript" src="js/unitTest/fn/model/unitTestFMWinningLs.js"></script>
+        <script type="text/javascript" src="js/unitTest/fn/model/unitTestFM.js"></script>
+        <script type="text/javascript" src="js/unitTest/fn/view/unitTestFVRenderBoard.js"></script>
+        <script type="text/javascript" src="js/unitTest/fn/view/unitTestFVRenderInfo.js"></script>
+        <script type="text/javascript" src="js/unitTest/fn/view/unitTestFVRenderMoves.js"></script>
+        <script type="text/javascript" src="js/unitTest/fn/view/unitTestFVRenderSq.js"></script>
+        <script type="text/javascript" src="js/unitTest/fn/view/unitTestFV.js"></script>
+        <script type="text/javascript" src="js/unitTest/unitTestOMStates.js"></script>
+        <script type="text/javascript" src="js/unitTest/unitTest.js"></script>
+        <!-- -->
+        <!-- These are the integration test counterparts -->
+        <script type="text/javascript" src="js/integrationTest/integrationTestCfgBoardW3BoardH3PlayersXO.js"></script>
+        <script type="text/javascript" src="js/integrationTest/integrationTest.js"></script>
+        <!-- -->
+
+    </body>
+
+</html>

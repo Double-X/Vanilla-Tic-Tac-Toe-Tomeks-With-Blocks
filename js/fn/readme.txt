@@ -1,0 +1,1 @@
+Functions are modules that don't encapsulate states and are either pure functions, nullipotent, idempotent or involutory.

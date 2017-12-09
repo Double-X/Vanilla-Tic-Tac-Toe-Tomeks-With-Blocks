@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <title>Tic Tac Toe Tomek With Blocks Mini</title>
+
+        <link rel="stylesheet" href="css/game.css">
+        <link rel="stylesheet" href="css/square.css">
+
+    </head>
+
+    <body>
+
+        <div id="game" class="game">
+
+            <div id="board"></div>
+
+            <div id="info" class="game-info">
+
+                <div id="players"></div>
+                <div id="curStat"></div>
+                <button id="clearHist">Clear History</button>
+                <button id="toggleMoveSortOrd">Reverse Move Order</button>
+
+                <div id="moves"></div>
+
+            </div>
+
+        </div>
+
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+
+        <!-- This is the compact version having all functionalities -->
+        <script type="text/javascript" src="appMini.js"></script>
+        <!-- -->
+        <!-- These are the unit test counterparts -->
+        <script type="text/javascript" src="js/unitTest/fn/model/unitTestFMIsDraw.js"></script>
+        <script type="text/javascript" src="js/unitTest/fn/model/unitTestFMIsSpecialSq.js"></script>
+        <script type="text/javascript" src="js/unitTest/fn/model/unitTestFMPlayer.js"></script>
+        <script type="text/javascript" src="js/unitTest/fn/model/unitTestFMRenderCmds.js"></script>
+        <script type="text/javascript" src="js/unitTest/fn/model/unitTestFMSqs.js"></script>
+        <script type="text/javascript" src="js/unitTest/fn/model/unitTestFMWinner.js"></script>
+        <script type="text/javascript" src="js/unitTest/fn/model/unitTestFMWinningLs.js"></script>
+        <script type="text/javascript" src="js/unitTest/fn/model/unitTestFM.js"></script>
+        <script type="text/javascript" src="js/unitTest/fn/view/unitTestFVRenderBoard.js"></script>
+        <script type="text/javascript" src="js/unitTest/fn/view/unitTestFVRenderInfo.js"></script>
+        <script type="text/javascript" src="js/unitTest/fn/view/unitTestFVRenderMoves.js"></script>
+        <script type="text/javascript" src="js/unitTest/fn/view/unitTestFVRenderSq.js"></script>
+        <script type="text/javascript" src="js/unitTest/fn/view/unitTestFV.js"></script>
+        <script type="text/javascript" src="js/unitTest/unitTestOMStates.js"></script>
+        <script type="text/javascript" src="js/unitTest/unitTest.js"></script>
+        <!-- -->
+        <!-- These are the integration test counterparts -->
+        <script type="text/javascript" src="js/integrationTest/integrationTestCfgBoardW3BoardH3PlayersXO.js"></script>
+        <script type="text/javascript" src="js/integrationTest/integrationTest.js"></script>
+        <!-- -->
+
+    </body>
+
+</html>
